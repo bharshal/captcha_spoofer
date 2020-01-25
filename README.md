@@ -25,16 +25,20 @@ When creating the dataset, it reads every image where the name of the image is t
 It then separates the 5 symbols in each image using CV techniques like:
 
 Original captcha:
+
 ![alt text](https://github.com/bharshal/captcha_spoofer/blob/master/index2.png)
 
 Erosion and morphology to smoothen the image:
+
 ![alt text](https://github.com/bharshal/captcha_spoofer/blob/master/index3.png)
 
 Contours detection to detect the symbols:
+
 ![alt text](https://github.com/bharshal/captcha_spoofer/blob/master/index.png)
 ![alt text](https://github.com/bharshal/captcha_spoofer/blob/master/index1.png)
 
 The symbols are cropped and supplied as training set.
+
 ![alt text](https://github.com/bharshal/captcha_spoofer/blob/master/train_loss.png)
 
 After model has been trained, it is used for inference after doing same process as above.
